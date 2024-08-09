@@ -1,27 +1,57 @@
-# Frontend
+![logo medicar](https://i.postimg.cc/DZNPJSxk/Logo.png "logo medicar")
+# Desafio Medicar  [ Frontend ]
+Descrição: Teste prático Intemed Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.3.
+Autor: Eymard Neto ( [linkedin](https://www.linkedin.com/in/eymard-neto-216254207) )
 
-## Development server
+# Tecnologias
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+  - Angular 18.1.3
+  - Angular Material 18.1.3
+  - Sass
 
-## Code scaffolding
+# Pré-requisitos para Setup
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Git
+- Node 18+
 
-## Build
+## Setup Frontend
+Esse guia irá te ajudar a executar a aplicação em ambiente de desenvolvimento
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### 1. Clonar o repositório e atualizar arquivo de ambiente
+Clone o repositório e navegue até a pasta `src`:
 
-## Running unit tests
+```bash
+git clone <https://github.com/franciscoeymardneto/intmed-front.git>
+cd src
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Entre na pasta /environments e atualize o arquivo environment.ts conforme necessário:
 
-## Running end-to-end tests
+```bash
+cd /environments
+```
+Coloque a url da [API backend](https://github.com/franciscoeymardneto/intmed-back.git) do projeto medicar
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### 2. Instalando dependencias
+Volte para a raiz da pasta frontend e execute o comando para instalar as dependências do projeto:
 
-## Further help
+```bash
+cd ..
+npm install
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### 3. Execute a aplicação
+Execute a aplicação para poder ter acesso ao sistema
+
+```bash
+npm start
+```
+### 4. Acessos
+
+- Acesse a aplicação através do endereço: http://localhost:4200/
+
+Agora basta só criar sua conta e testar a aplicação!!
+
+OBS: Lembre de popular o banco através do menu Admin do Django para que o frontend tenha o que
+consumir
